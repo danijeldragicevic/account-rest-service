@@ -31,9 +31,9 @@ Following endpoints will be exposed:
 | PUT     | /api/admin/user/role   | -         | -    | -          | +             | -       | Changes user role                          |
 | PUT     | /api/admin/user/access | -         | -    | -          | +             | -       | Lock or unlock user                        |
 | DELETE  | /api/admin/user/:email | -         | -    | -          | +             | -       | Deletes a user by it's :email              |
-| GET     | /api/empl/payment      | -         | +    | +          | -             | -       | Gives access to the employee's payrolls    |
 | POST    | /api/acct/payments     | -         | -    | +          | -             | -       | Uploads payrolls                           |
 | PUT     | /api/acct/payments     | -         | -    | +          | -             | -       | Updates payment information                |
+| GET     | /api/empl/payment      | -         | +    | +          | -             | -       | Gives access to the employee's payrolls    |
 | GET     | /api/security/events   | -         | -    | -          | -             | +       | Show security events of the service        |
 
 # Examples
