@@ -26,10 +26,10 @@ public class UserDto {
 
     private long Id;
 
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "Name can not be empty!")
     private String name;
 
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "Lastname can not be empty!")
     private String lastname;
 
     @Email(regexp = ".+@\\W*((?i)acme.com(?-i))\\W*", message = "Email should be of acme.com domain!")
