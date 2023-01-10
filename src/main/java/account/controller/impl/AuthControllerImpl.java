@@ -81,7 +81,7 @@ public class AuthControllerImpl implements IAuthController {
 
         ChangePassDto changePassDto = new ChangePassDto();
         changePassDto.setEmail(userDetails.getUsername());
-        changePassDto.setStatus("The password has been updated successfully");
+        changePassDto.setStatus("The password has been updated successfully.");
 
         return ResponseEntity.ok(changePassDto);
     }

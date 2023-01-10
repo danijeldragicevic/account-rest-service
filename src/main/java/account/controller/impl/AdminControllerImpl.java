@@ -95,6 +95,7 @@ public class AdminControllerImpl implements IAdminController {
             throw new CanNotLockAdministratorException();
         }
 
+        //TODO: Implement, when user is locked, it should get HttpStatus.FORBIDDEN for all resources it has rights before, until it's unlocked again.
         user.get().setLockOperation(LockOperation.valueOf(lockReqDto.getOperation()));
         authService.saveUser(user.get());
 

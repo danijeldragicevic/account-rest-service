@@ -15,11 +15,11 @@ import javax.validation.groups.Default;
 @ToString
 @EqualsAndHashCode
 public class LockReqDto {
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "User can not be empty!")
     @JsonProperty(value = "user")
     private String email;
 
-    @NotBlank(message = "Bad Request", groups = Default.class)
+    @NotBlank(message = "Operation can not be empty!", groups = Default.class)
     @Enum(enumClass = LockOperation.class, ignoreCase = true,
             message = "Operation field should be LOCK or UNLOCK.", groups = EnumValidationGroup.class)
     private String operation;

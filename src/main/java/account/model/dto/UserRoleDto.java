@@ -15,15 +15,15 @@ import javax.validation.groups.Default;
 @EqualsAndHashCode
 public class UserRoleDto {
 
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "User can not be empty!")
     private String user;
 
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "Role can not be empty!")
     private String role;
 
     // Using groups to control the execution sequence (1. Default.class, 2. EnumValidationGroup).
     // See: account.validator.ValidationSequence
-    @NotBlank(message = "Bad Request", groups = Default.class)
+    @NotBlank(message = "Operation can not be empty!", groups = Default.class)
     @Enum(enumClass = RoleOperation.class, ignoreCase = true,
             message = "Operation field should be GRANT or REMOVE.", groups = EnumValidationGroup.class)
     private String operation;

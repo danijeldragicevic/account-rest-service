@@ -16,7 +16,7 @@ public class ChangePassDto {
 
     private String status;
 
-    @NotBlank(message = "Bad Request")
+    @NotBlank(message = "New password can not be empty!")
     @JsonProperty(value = "new_password", access = JsonProperty.Access.WRITE_ONLY)
     @Size(min = 12, message = "Password length must be 12 chars minimum!")
     private String password;
