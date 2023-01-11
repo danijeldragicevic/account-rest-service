@@ -411,17 +411,17 @@ In case it is attempted, similar error will be thrown:
 }
 ```
 **Example 8:** GET /api/empl/payment <br/>
-With authentication credentials of existing user, e.g. username = "james.doe@acme.com", password = "123456789ABC". <br/>
+With authentication credentials of existing user, e.g. username = "john.doe@acme.com", password = "123456789DEF". <br/>
 
 Response 200 OK.
 Response body:
 ```
 [
   {
-    "name": "James",
+    "name": "John",
     "lastname": "Doe",
     "period": "January-2021",
-    "salary": "98 dollar(s) 76 cent(s)"
+    "salary": "99 dollar(s) 99 cent(s)"
   }
 ]
 ```
