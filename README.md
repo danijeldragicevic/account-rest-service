@@ -455,7 +455,7 @@ Application logs following security events:
 | The Administrator has deleted a user	                        | DELETE_USER     |
 | A user has been blocked on suspicion of a brute force attack | BRUTE_FORCE     |
 
-If there are more than three failed login attempts, for some user, BRUTE_FORCE event will be registered and that user will be locked.
+If user made more than three failed login attempts, BRUTE_FORCE event will be registered and that user will be locked.
 
 Response 200 OK. <br/>
 Response body:
