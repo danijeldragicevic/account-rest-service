@@ -131,7 +131,7 @@ public class DefaultExceptionHandler extends ResponseEntityExceptionHandler impl
     @ExceptionHandler(DuplicatePaymentEntryException.class)
     public ResponseEntity<Object> handleDuplicatePaymentEntryException(WebRequest request) {
         ApiError error = initBadRequestErrorObj(request);
-        error.setMessage("Error!");
+        error.setMessage("Duplicate payment entry!");
 
         return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
     }
