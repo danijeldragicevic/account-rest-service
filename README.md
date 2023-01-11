@@ -153,7 +153,7 @@ Response body:
 With the correct authentication: username = "john.doe@acme.com", password = "123456789ABC". <br/>
 
 New password must be different from the old one. <br/>
-Password will be checked against a **set of breached passwords**. <br/>
+Password will be checked against a **[set of breached passwords](README.md#Examples)**. <br/>
 
 Request body:
 ```
