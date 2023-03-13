@@ -23,8 +23,7 @@ Following endpoints will be exposed:
 
 | Methods | Urls                   | Anonymous | User | Accountant | Administrator | Auditor | Action                                     |
 |---------|------------------------|-----------|------|------------|---------------|---------|--------------------------------------------|
-| GET     | /h2                    | +         | +    | +          | +             | +       | Read from the local database               |
-| POST    | /h2                    | +         | +    | +          | +             | +       | Write to the local database                |
+| GET     | /h2                    | +         | +    | +          | +             | +       | Access to the local database               |
 | POST    | /api/auth/signup       | +         | +    | +          | +             | +       | Allows the user to register on the service |
 | POST    | /api/auth/changepass   | -         | +    | +          | +             | -       | Changes a user password                    |
 | GET     | /api/admin/user/       | -         | -    | -          | +             | -       | Displays information about all users       |
