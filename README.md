@@ -18,7 +18,7 @@ Service use embedded H2 database and Basic authentication.
 Navigate to the project root directory and run **./gradlew bootRun**
 
 # Exposed endpoints:
-By default, service will run on **http://localhost:28852/** <br/>
+By default, service will run on **http://localhost:28852** <br/>
 Following endpoints will be exposed:
 
 | Methods | Urls                   | Anonymous | User | Accountant | Administrator | Auditor | Action                                     |
